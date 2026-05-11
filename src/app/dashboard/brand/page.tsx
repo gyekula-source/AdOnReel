@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 export default function BrandDashboard() {
   const activeCampaigns = [
-    { id: 1, name: "Summer Tech Refresh", budget: "$15,000", spent: "$8,450", reach: "1.2M", roi: "2.4x" },
-    { id: 2, name: "Back to School Promo", budget: "$25,000", spent: "$2,100", reach: "350K", roi: "1.8x" },
+    { id: 1, name: "Summer Tech Refresh", budget: "₹15,000", spent: "₹8,450", reach: "1.2M", roi: "2.4x" },
+    { id: 2, name: "Back to School Promo", budget: "₹25,000", spent: "₹2,100", reach: "350K", roi: "1.8x" },
   ];
 
   return (
@@ -73,11 +73,11 @@ export default function BrandDashboard() {
             <GlassCard className="p-6">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-10 h-10 rounded-full bg-green-500/20 flex items-center justify-center">
-                  <span className="text-green-400 font-bold">$</span>
+                  <span className="text-green-400 font-bold">₹</span>
                 </div>
                 <div className="text-sm font-medium text-muted">Total Ad Spend</div>
               </div>
-              <div className="text-3xl font-bold mb-1">$45,200</div>
+              <div className="text-3xl font-bold mb-1">₹45,200</div>
               <div className="text-sm text-muted">YTD 2026</div>
             </GlassCard>
           </SlideUp>

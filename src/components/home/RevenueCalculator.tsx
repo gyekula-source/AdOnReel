@@ -109,7 +109,7 @@ export function RevenueCalculator() {
                   animate={{ scale: 1, opacity: 1 }}
                   className="text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-light to-white drop-shadow-lg mb-6"
                 >
-                  ${basePayout.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+                  ₹{basePayout.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
                 </motion.div>
 
                 <div className="flex flex-wrap gap-4 justify-center">

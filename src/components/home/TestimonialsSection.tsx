@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const testimonials = [
   {
-    quote: "AdOnReel transformed my Instagram account into a full-time business. I made $4,500 last month just by including automated brand overlays in my daily reels.",
+    quote: "AdOnReel transformed my Instagram account into a full-time business. I made ₹4,500 last month just by including automated brand overlays in my daily reels.",
     name: "Sarah Jenkins",
     role: "Lifestyle Creator • 1.2M Followers",
     type: "creator"

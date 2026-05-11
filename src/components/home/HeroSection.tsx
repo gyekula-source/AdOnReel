@@ -79,7 +79,7 @@ export function HeroSection() {
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
           >
             <div className="text-xs text-muted mb-1">Instant Payout</div>
-            <div className="text-xl font-bold text-green-400">+$450.00</div>
+            <div className="text-xl font-bold text-green-400">+₹450.00</div>
           </motion.div>
 
           <motion.div 

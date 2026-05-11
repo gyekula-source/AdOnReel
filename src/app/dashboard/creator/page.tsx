@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 
 export default function CreatorDashboard() {
   const recentReels = [
-    { id: 1, title: "Morning Routine feat. TechGear", views: "125K", earnings: "$145.50", status: "Active" },
-    { id: 2, title: "Setup Tour with GlowX", views: "340K", earnings: "$520.00", status: "Active" },
-    { id: 3, title: "Unboxing AdOnReel Merch", views: "89K", earnings: "$95.20", status: "Completed" },
+    { id: 1, title: "Morning Routine feat. TechGear", views: "125K", earnings: "₹145.50", status: "Active" },
+    { id: 2, title: "Setup Tour with GlowX", views: "340K", earnings: "₹520.00", status: "Active" },
+    { id: 3, title: "Unboxing AdOnReel Merch", views: "89K", earnings: "₹95.20", status: "Completed" },
   ];
 
   return (
@@ -37,7 +37,7 @@ export default function CreatorDashboard() {
                 </div>
                 <div className="text-sm font-medium text-muted">Available Balance</div>
               </div>
-              <div className="text-3xl font-bold mb-1">$4,250.00</div>
+              <div className="text-3xl font-bold mb-1">₹4,250.00</div>
               <div className="text-sm text-green-400 flex items-center">
                 <ArrowUpRight className="w-4 h-4 mr-1" /> +15% this week
               </div>
@@ -52,7 +52,7 @@ export default function CreatorDashboard() {
                 </div>
                 <div className="text-sm font-medium text-muted">Total Earnings</div>
               </div>
-              <div className="text-3xl font-bold mb-1">$12,840.50</div>
+              <div className="text-3xl font-bold mb-1">₹12,840.50</div>
               <div className="text-sm text-muted">Lifetime</div>
             </GlassCard>
           </SlideUp>
@@ -102,7 +102,7 @@ export default function CreatorDashboard() {
                       className="w-full bg-purple/30 rounded-t-md group-hover:bg-purple transition-colors relative"
                     >
                       <div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-white text-dark text-xs font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
-                        ${height * 10}
+                        ₹{height * 10}
                       </div>
                     </motion.div>
                   </div>

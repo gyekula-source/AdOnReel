@@ -37,7 +37,7 @@ export function StatsSection() {
           {stats.map((stat, index) => (
             <FadeIn key={stat.label} delay={index * 0.1} className="flex flex-col items-center">
               <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 drop-shadow-[0_0_15px_rgba(124,58,237,0.5)]">
-                {stat.label === "Campaign Revenue" ? "$" : ""}
+                {stat.label === "Campaign Revenue" ? "₹" : ""}
                 <Counter value={stat.value} suffix={stat.suffix} />
               </div>
               <div className="text-sm md:text-base text-muted uppercase tracking-wider font-semibold">
