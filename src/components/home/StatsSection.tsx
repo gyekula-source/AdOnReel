@@ -24,10 +24,10 @@ function Counter({ value, suffix = "" }: { value: number; suffix?: string }) {
 
 export function StatsSection() {
   const stats = [
-    { label: "Total Creators", value: 50000, suffix: "+" },
-    { label: "Total Brands", value: 1200, suffix: "+" },
-    { label: "Reels Monetized", value: 2500000, suffix: "+" },
-    { label: "Campaign Revenue", value: 15, suffix: "M+" },
+    { label: "Total Creators", value: 15000, suffix: "+" },
+    { label: "Total Brands", value: 750, suffix: "+" },
+    { label: "Reels Monetized", value: 750000, suffix: "+" },
+    { label: "Campaign Revenue", value: 4, suffix: "M+" },
   ];
 
   return (
