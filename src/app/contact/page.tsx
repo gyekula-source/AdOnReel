@@ -52,7 +52,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Office</h3>
                   <p className="text-muted-foreground mb-2">Come say hello at our HQ.</p>
-                  <p className="text-foreground font-medium">Fintech Valley<br/>Madhurawada<br/>Visakhapatnam, AP 530048</p>
+                  <p className="text-foreground font-medium">Venture Development Center<br/>GITAM University<br/>Visakhapatnam</p>
                 </div>
               </div>
 

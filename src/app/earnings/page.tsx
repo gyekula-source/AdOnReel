@@ -22,12 +22,6 @@ export default function EarningsPage() {
       fee: "1.5% Fee"
     },
     {
-      name: "Crypto (USDT/USDC)",
-      icon: <Bitcoin className="w-8 h-8 text-purple-light" />,
-      time: "Under 5 mins",
-      fee: "Network Fee Only"
-    },
-    {
       name: "Digital Wallet",
       icon: <Wallet className="w-8 h-8 text-blue-400" />,
       time: "Instant",

@@ -27,7 +27,7 @@ export default function HowItWorksPage() {
     {
       icon: <Wallet className="w-8 h-8 text-blue-400" />,
       title: "4. Instant Payouts",
-      description: "Once a campaign ends or you hit your threshold, withdraw your earnings directly to your bank account or crypto wallet instantly.",
+      description: "Once a campaign ends or you hit your threshold, withdraw your earnings directly to your bank account or PayPal instantly.",
       color: "bg-blue"
     }
   ];

@@ -2,12 +2,12 @@
 
 import { GlassCard } from "@/components/ui/glass-card";
 import { SlideUp } from "@/components/animations/SlideUp";
-import { Wallet, Banknote, CreditCard, Bitcoin, ArrowRight, Building } from "lucide-react";
+import { Wallet, Banknote, CreditCard, ArrowRight, Building } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 
 export default function WithdrawFundsPage() {
-  const [method, setMethod] = useState<"bank" | "paypal" | "crypto">("bank");
+  const [method, setMethod] = useState<"bank" | "paypal">("bank");
   const [amount, setAmount] = useState<string>("4250");
   const availableBalance = 4250.00;
 
@@ -92,7 +92,7 @@ export default function WithdrawFundsPage() {
                   {/* Method Selection */}
                   <div className="space-y-3">
                     <label className="text-sm font-semibold text-foreground">Withdrawal Method</label>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <button
                         type="button"
                         onClick={() => setMethod("bank")}
@@ -113,17 +113,6 @@ export default function WithdrawFundsPage() {
                       >
                         <CreditCard className="w-6 h-6" />
                         <span className="text-sm font-medium">PayPal</span>
-                      </button>
-
-                      <button
-                        type="button"
-                        onClick={() => setMethod("crypto")}
-                        className={`p-4 rounded-xl border flex flex-col items-center justify-center gap-2 transition-all ${
-                          method === "crypto" ? "border-orange-400 bg-orange-400/10 text-orange-500" : "border-border bg-card text-muted-foreground hover:border-orange-400/50"
-                        }`}
-                      >
-                        <Bitcoin className="w-6 h-6" />
-                        <span className="text-sm font-medium">Crypto</span>
                       </button>
                     </div>
                   </div>
@@ -151,13 +140,6 @@ export default function WithdrawFundsPage() {
                       <div className="space-y-2">
                         <label className="text-sm font-medium text-foreground">PayPal Email Address</label>
                         <input type="email" placeholder="sarah@example.com" className="w-full px-4 py-3 bg-card border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400/50 text-foreground" />
-                      </div>
-                    )}
-
-                    {method === "crypto" && (
-                      <div className="space-y-2">
-                        <label className="text-sm font-medium text-foreground">USDT Wallet Address (ERC-20)</label>
-                        <input type="text" placeholder="0x..." className="w-full px-4 py-3 bg-card border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-400/50 text-foreground" />
                       </div>
                     )}
                   </div>

@@ -25,7 +25,7 @@ export default function ForCreatorsPage() {
     {
       icon: <Banknote className="w-8 h-8 text-blue-400" />,
       title: "4. Earn Money",
-      description: "Get paid based on the views and engagement your videos generate. Withdraw your earnings easily to your bank or crypto wallet.",
+      description: "Get paid based on the views and engagement your videos generate. Withdraw your earnings easily to your bank or PayPal.",
     }
   ];
 
