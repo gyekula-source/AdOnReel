@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 import Image from "next/image";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -20,8 +21,8 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 inset-x-0 z-50 transition-all duration-300 border-b border-transparent",
-        scrolled ? "bg-dark/80 backdrop-blur-md border-white/10 py-4 shadow-lg shadow-black/20" : "bg-transparent py-6"
+        "fixed top-0 inset-x-0 z-50 transition-all duration-300 border-b",
+        scrolled ? "bg-background/80 backdrop-blur-md border-border py-4 shadow-lg" : "bg-transparent border-transparent py-6"
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
@@ -37,19 +38,21 @@ export function Navbar() {
         </Link>
 
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="/features" className="text-sm font-medium text-white/70 hover:text-white transition-colors">Features</Link>
-          <Link href="/pricing" className="text-sm font-medium text-white/70 hover:text-white transition-colors">Pricing</Link>
-          <Link href="/creators" className="text-sm font-medium text-white/70 hover:text-white transition-colors">For Creators</Link>
-          <Link href="/brands" className="text-sm font-medium text-white/70 hover:text-white transition-colors">For Brands</Link>
+          <Link href="/features" className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors">Features</Link>
+          <Link href="/pricing" className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors">Pricing</Link>
+          <Link href="/earnings" className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors">Earnings</Link>
+          <Link href="/creators" className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors">For Creators</Link>
+          <Link href="/brands" className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors">For Brands</Link>
         </nav>
 
         <div className="flex items-center gap-4">
-          <Link href="/login" className="text-sm font-medium text-white/70 hover:text-white transition-colors hidden md:block">
+          <ThemeToggle />
+          <Link href="/login" className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors hidden md:block">
             Log in
           </Link>
           <Link 
             href="/register" 
-            className="text-sm font-semibold bg-white text-dark px-5 py-2.5 rounded-full hover:bg-white/90 transition-colors"
+            className="text-sm font-semibold bg-primary text-primary-foreground px-5 py-2.5 rounded-full hover:bg-primary/90 transition-colors"
           >
             Get Started
           </Link>

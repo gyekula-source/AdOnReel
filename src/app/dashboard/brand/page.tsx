@@ -4,6 +4,7 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { SlideUp } from "@/components/animations/SlideUp";
 import { BarChart3, Users, PlusCircle, Target, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function BrandDashboard() {
   const activeCampaigns = [
@@ -12,17 +13,20 @@ export default function BrandDashboard() {
   ];
 
   return (
-    <div className="min-h-screen pt-32 pb-20 px-4 md:px-8">
+    <div className="min-h-screen pt-32 pb-20 px-4 md:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
         <SlideUp>
           <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-4">
             <div>
-              <h1 className="text-3xl font-bold">Brand Command Center</h1>
-              <p className="text-muted">Track your campaigns and influencer ROI in real-time.</p>
+              <h1 className="text-3xl font-bold text-foreground">Brand Command Center</h1>
+              <p className="text-muted-foreground">Track your campaigns and influencer ROI in real-time.</p>
             </div>
-            <button className="bg-purple text-white px-6 py-2 rounded-full font-semibold hover:bg-purple/90 transition-colors self-start md:self-auto flex items-center gap-2 shadow-[0_0_20px_-5px_rgba(124,58,237,0.5)]">
+            <Link 
+              href="/dashboard/brand/launch"
+              className="bg-primary text-primary-foreground px-6 py-2 rounded-full font-semibold hover:bg-primary/90 transition-colors self-start md:self-auto flex items-center gap-2 shadow-[0_0_20px_-5px_rgba(233,30,99,0.5)]"
+            >
               <PlusCircle className="w-5 h-5" /> Launch Campaign
-            </button>
+            </Link>
           </div>
         </SlideUp>
 

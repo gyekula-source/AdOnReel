@@ -114,10 +114,10 @@ export function RevenueCalculator() {
 
                 <div className="flex flex-wrap gap-4 justify-center">
                   <div className={`px-4 py-2 rounded-full border text-sm font-bold transition-colors ${isViral ? 'bg-orange-500/20 border-orange-500/50 text-orange-400' : 'bg-dark/50 border-white/10 text-muted'}`}>
-                    🔥 Viral Bonus {isViral && '(1.5x)'}
+                    Viral Bonus {isViral && '(1.5x)'}
                   </div>
                   <div className={`px-4 py-2 rounded-full border text-sm font-bold transition-colors ${hasBoost ? 'bg-blue/20 border-blue/50 text-blue-400' : 'bg-dark/50 border-white/10 text-muted'}`}>
-                    🚀 Shares Boost {hasBoost && '(2.0x)'}
+                    Shares Boost {hasBoost && '(2.0x)'}
                   </div>
                 </div>
               </GlassCard>

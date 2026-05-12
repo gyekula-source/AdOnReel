@@ -4,6 +4,7 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { SlideUp } from "@/components/animations/SlideUp";
 import { Wallet, TrendingUp, Video, Activity, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function CreatorDashboard() {
   const recentReels = [
@@ -13,17 +14,20 @@ export default function CreatorDashboard() {
   ];
 
   return (
-    <div className="min-h-screen pt-32 pb-20 px-4 md:px-8">
+    <div className="min-h-screen pt-32 pb-20 px-4 md:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
         <SlideUp>
           <div className="flex flex-col md:flex-row md:items-center justify-between mb-10 gap-4">
             <div>
-              <h1 className="text-3xl font-bold">Welcome back, Sarah</h1>
-              <p className="text-muted">Here's your engagement and earnings overview.</p>
+              <h1 className="text-3xl font-bold text-foreground">Welcome back, Sarah</h1>
+              <p className="text-muted-foreground">Here's your engagement and earnings overview.</p>
             </div>
-            <button className="bg-white text-dark px-6 py-2 rounded-full font-semibold hover:bg-white/90 transition-colors self-start md:self-auto">
+            <Link 
+              href="/dashboard/creator/withdraw"
+              className="bg-primary text-primary-foreground px-6 py-2 rounded-full font-semibold hover:bg-primary/90 transition-colors self-start md:self-auto"
+            >
               Withdraw Funds
-            </button>
+            </Link>
           </div>
         </SlideUp>
 
