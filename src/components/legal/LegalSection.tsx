@@ -27,7 +27,7 @@ export function LegalSection({ number, title, children, delay = 0 }: LegalSectio
           className="flex items-center justify-between p-6 cursor-pointer select-none"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <h2 className="text-xl font-medium text-white flex items-center gap-4 m-0">
+          <h2 className="text-xl font-medium text-primary flex items-center gap-4 m-0">
             <div className="w-8 h-8 bg-purple/15 text-purple-light border border-purple/30 rounded-lg flex items-center justify-center text-sm font-bold shadow-[inset_0_2px_5px_rgba(255,255,255,0.05)]">
               {number}
             </div>

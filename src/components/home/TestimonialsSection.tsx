@@ -68,8 +68,8 @@ export function TestimonialsSection() {
               className="absolute inset-0"
             >
               <GlassCard className="p-8 md:p-12 h-full flex flex-col justify-center relative">
-                <Quote className="absolute top-6 left-6 w-12 h-12 text-white/5" />
-                <p className="text-xl md:text-2xl font-medium text-white/90 leading-relaxed mb-8 relative z-10 text-center">
+                <Quote className="absolute top-6 left-6 w-12 h-12 text-primary/5" />
+                <p className="text-xl md:text-2xl font-medium text-primary/90 leading-relaxed mb-8 relative z-10 text-center">
                   "{testimonials[currentIndex].quote}"
                 </p>
                 <div className="flex flex-col items-center justify-center text-center">
@@ -87,7 +87,7 @@ export function TestimonialsSection() {
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`h-2 rounded-full transition-all duration-300 ${idx === currentIndex ? 'w-8 bg-purple' : 'w-2 bg-white/20 hover:bg-white/40'}`}
+                className={`h-2 rounded-full transition-all duration-300 ${idx === currentIndex ? 'w-8 bg-primary' : 'w-2 bg-primary/20 hover:bg-primary/40'}`}
                 aria-label={`Go to slide ${idx + 1}`}
               />
             ))}

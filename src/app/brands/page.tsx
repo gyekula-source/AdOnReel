@@ -116,10 +116,10 @@ export default function ForBrandsPage() {
               Create your brand account today and launch your first automated influencer campaign.
             </p>
             <Link 
-              href="/register" 
+              href="/download-app" 
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full hover:bg-primary/90 transition-colors"
             >
-              Create Brand Account
+              Download App
               <ArrowRight className="w-5 h-5" />
             </Link>
           </GlassCard>

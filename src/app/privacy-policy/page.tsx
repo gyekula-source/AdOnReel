@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
           <li><strong>Content Metrics:</strong> Performance data for Reels and posts published as part of AdOnReel campaigns</li>
         </ul>
         
-        <div className="mt-6 p-4 bg-gradient-to-br from-purple/10 to-blue/5 border border-purple/20 rounded-xl text-white relative overflow-hidden">
+        <div className="mt-6 p-4 bg-gradient-to-br from-purple/10 to-blue/5 border border-purple/20 rounded-xl text-primary relative overflow-hidden">
           <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-purple to-blue" />
           <strong>Important:</strong> AdOnReel does NOT access your personal Instagram messages, your friends list, your personal photos unrelated to campaigns, or any data from your personal followers. We only access business and performance data necessary to operate our influencer marketing platform.
         </div>
@@ -65,11 +65,11 @@ export default function PrivacyPolicyPage() {
           <div className="space-y-4 relative z-10">
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-6">
               <span className="text-muted text-sm uppercase tracking-widest w-24">Company</span>
-              <strong className="text-white">Infludot Technologies — AdOnReel</strong>
+              <strong className="text-primary">Infludot Technologies — AdOnReel</strong>
             </div>
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-6">
               <span className="text-muted text-sm uppercase tracking-widest w-24">Privacy</span>
-              <a href="mailto:privacy@adonreel.in" className="text-blue-400 hover:text-white transition-colors">privacy@adonreel.in</a>
+              <a href="mailto:privacy@adonreel.in" className="text-blue-400 hover:text-primary transition-colors">privacy@adonreel.in</a>
             </div>
           </div>
         </div>

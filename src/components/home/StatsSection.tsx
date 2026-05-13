@@ -36,7 +36,7 @@ export function StatsSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center divide-x divide-white/10">
           {stats.map((stat, index) => (
             <FadeIn key={stat.label} delay={index * 0.1} className="flex flex-col items-center">
-              <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2 drop-shadow-[0_0_15px_rgba(124,58,237,0.5)]">
+              <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2 drop-shadow-[0_0_15px_rgba(124,58,237,0.5)]">
                 {stat.label === "Campaign Revenue" ? "₹" : ""}
                 <Counter value={stat.value} suffix={stat.suffix} />
               </div>

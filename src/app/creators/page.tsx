@@ -9,8 +9,8 @@ export default function ForCreatorsPage() {
   const steps = [
     {
       icon: <Link2 className="w-8 h-8 text-purple-light" />,
-      title: "1. Register & Link Socials",
-      description: "Create your free account and securely link your social media handles. We support major platforms to track your engagement.",
+      title: "1. Install the App & Sync Socials",
+      description: "Open the app, connect your Instagram or TikTok account, and authorize campaign tracking in seconds.",
     },
     {
       icon: <Video className="w-8 h-8 text-blue-400" />,
@@ -19,8 +19,8 @@ export default function ForCreatorsPage() {
     },
     {
       icon: <Sparkles className="w-8 h-8 text-purple-light" />,
-      title: "3. Dynamic Banner Insertion",
-      description: "Our AI dynamically inserts non-intrusive brand banners into your videos, ensuring seamless integration without disrupting the viewer experience.",
+      title: "3. Manual Banner Placement",
+      description: "Select and place non-intrusive brand banners into your videos yourself, choosing timing and style that match your creative flow.",          
     },
     {
       icon: <Banknote className="w-8 h-8 text-blue-400" />,
@@ -57,7 +57,7 @@ export default function ForCreatorsPage() {
           <div className="text-center max-w-4xl mx-auto mb-20">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">Turn Your Social Influence Into <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-light to-blue-400">Guaranteed Income</span></h1>
             <p className="text-xl text-muted-foreground">
-              Register your account, link your social media handles, and let AdOnReel monetize your views automatically.
+              Install the app, sync your social accounts, and manually add branded banners to your reels with easy placement controls.
             </p>
           </div>
         </SlideUp>
@@ -116,10 +116,10 @@ export default function ForCreatorsPage() {
               Join thousands of creators who are already earning passive income on AdOnReel.
             </p>
             <Link 
-              href="/register" 
+              href="/download-app" 
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full hover:bg-primary/90 transition-colors"
             >
-              Start Earning Now
+              Download the App
               <ArrowRight className="w-5 h-5" />
             </Link>
           </GlassCard>

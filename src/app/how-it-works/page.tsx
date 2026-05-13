@@ -33,7 +33,7 @@ export default function HowItWorksPage() {
   ];
 
   return (
-    <div className="min-h-screen pt-32 pb-20 px-4 md:px-8 bg-dark relative overflow-hidden">
+    <div className="min-h-screen pt-32 pb-20 px-4 md:px-8 bg-background relative overflow-hidden">
       <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-purple/10 rounded-full blur-[100px] pointer-events-none" />
       
       <div className="max-w-4xl mx-auto relative z-10">
@@ -58,7 +58,7 @@ export default function HowItWorksPage() {
                   </div>
                   
                   <GlassCard className="p-8 flex-1 border-white/5 group-hover:border-white/20 transition-colors">
-                    <h2 className="text-2xl font-bold text-white mb-4">{step.title}</h2>
+                    <h2 className="text-2xl font-bold text-foreground mb-4">{step.title}</h2>
                     <p className="text-muted text-lg leading-relaxed">{step.description}</p>
                   </GlassCard>
                 </div>

@@ -45,7 +45,7 @@ export default function FeaturesPage() {
   ];
 
   return (
-    <div className="min-h-screen pt-32 pb-20 px-4 md:px-8 bg-dark relative overflow-hidden">
+    <div className="min-h-screen pt-32 pb-20 px-4 md:px-8 bg-background relative overflow-hidden">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue/5 rounded-full blur-[150px] pointer-events-none" />
       
@@ -68,7 +68,7 @@ export default function FeaturesPage() {
               <div className="w-16 h-16 rounded-2xl bg-dark/50 border border-white/10 flex items-center justify-center mb-6 shadow-inner">
                 {feature.icon}
               </div>
-              <h3 className="text-2xl font-bold text-white mb-3">{feature.title}</h3>
+              <h3 className="text-2xl font-bold text-foreground mb-3">{feature.title}</h3>
               <p className="text-muted leading-relaxed">
                 {feature.description}
               </p>

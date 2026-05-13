@@ -14,9 +14,9 @@ export default function MetaPermissionsPage() {
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="border-b border-white/10 bg-white/5">
-                <th className="p-4 text-sm font-semibold text-white/80">Permission</th>
-                <th className="p-4 text-sm font-semibold text-white/80">Access Type</th>
-                <th className="p-4 text-sm font-semibold text-white/80">Why We Need It</th>
+                <th className="p-4 text-sm font-semibold text-primary/80">Permission</th>
+                <th className="p-4 text-sm font-semibold text-primary/80">Access Type</th>
+                <th className="p-4 text-sm font-semibold text-primary/80">Why We Need It</th>
               </tr>
             </thead>
             <tbody>

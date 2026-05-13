@@ -36,7 +36,7 @@ export function FeaturesSection() {
               {creatorFeatures.map((feat, i) => (
                 <SlideUp key={feat.title} delay={i * 0.1}>
                   <GlassCard className="p-6 flex items-start gap-4 group">
-                    <div className="w-12 h-12 rounded-xl bg-purple/10 text-purple flex items-center justify-center shrink-0 group-hover:bg-purple group-hover:text-white transition-colors">
+                    <div className="w-12 h-12 rounded-xl bg-purple/10 text-purple flex items-center justify-center shrink-0 group-hover:bg-purple group-hover:text-primary transition-colors">
                       {feat.icon}
                     </div>
                     <div>
@@ -63,7 +63,7 @@ export function FeaturesSection() {
               {brandFeatures.map((feat, i) => (
                 <SlideUp key={feat.title} delay={i * 0.1}>
                   <GlassCard className="p-6 flex items-start gap-4 group">
-                    <div className="w-12 h-12 rounded-xl bg-blue/10 text-blue flex items-center justify-center shrink-0 group-hover:bg-blue group-hover:text-white transition-colors">
+                    <div className="w-12 h-12 rounded-xl bg-blue/10 text-blue flex items-center justify-center shrink-0 group-hover:bg-blue group-hover:text-primary transition-colors">
                       {feat.icon}
                     </div>
                     <div>

@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 import Image from "next/image";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,16 +25,21 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center">
-          <Image 
-            src="/logo.jpg" 
-            alt="AdOnReel Logo" 
-            width={140} 
-            height={50} 
-            className="object-contain h-10 w-auto md:h-12"
-            priority
-          />
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link href="/" className="flex items-center gap-3">
+            <Image 
+              src="/logo.jpg" 
+              alt="AdOnReel Logo" 
+              width={140} 
+              height={50} 
+              className="object-contain h-10 w-auto md:h-12"
+              priority
+            />
+          </Link>
+          <div className="hidden sm:flex flex-col text-xs uppercase tracking-[0.25em] text-muted-foreground">
+            <span className="font-semibold">Powered by Infludot</span>
+          </div>
+        </div>
 
         <nav className="hidden md:flex items-center gap-8">
           <Link href="/features" className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors">Features</Link>
@@ -46,15 +50,11 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <ThemeToggle />
-          <Link href="/login" className="text-sm font-medium text-foreground/70 hover:text-foreground transition-colors hidden md:block">
-            Log in
-          </Link>
           <Link 
-            href="/register" 
+            href="/download-app" 
             className="text-sm font-semibold bg-primary text-primary-foreground px-5 py-2.5 rounded-full hover:bg-primary/90 transition-colors"
           >
-            Get Started
+            Download App
           </Link>
         </div>
       </div>

@@ -30,7 +30,7 @@ export default function EarningsPage() {
   ];
 
   return (
-    <div className="min-h-screen pt-32 pb-20 px-4 md:px-8 bg-dark relative overflow-hidden">
+    <div className="min-h-screen pt-32 pb-20 px-4 md:px-8 bg-background relative overflow-hidden">
       {/* Background Orbs */}
       <div className="absolute top-1/4 left-10 w-[500px] h-[500px] bg-purple/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-10 w-[600px] h-[600px] bg-blue/10 rounded-full blur-[120px] pointer-events-none" />
@@ -104,7 +104,7 @@ export default function EarningsPage() {
                   <h3 className="text-xl font-semibold mb-2">{method.name}</h3>
                   <div className="space-y-1">
                     <p className="text-sm text-muted">{method.time}</p>
-                    <p className="text-sm font-medium text-white/80">{method.fee}</p>
+                    <p className="text-sm font-medium text-primary/80">{method.fee}</p>
                   </div>
                 </GlassCard>
               ))}
@@ -121,15 +121,15 @@ export default function EarningsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
-                href="/register" 
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-dark font-bold rounded-full hover:bg-white/90 transition-colors"
+                href="/download-app" 
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full hover:bg-primary/90 transition-colors"
               >
-                Create Free Account
+                Download App
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <Link 
                 href="/how-it-works" 
-                className="inline-flex items-center justify-center px-8 py-4 bg-dark border border-white/20 text-white font-bold rounded-full hover:bg-white/5 transition-colors"
+                className="inline-flex items-center justify-center px-8 py-4 bg-dark border border-primary/20 text-primary font-bold rounded-full hover:bg-primary/5 transition-colors"
               >
                 Learn How It Works
               </Link>

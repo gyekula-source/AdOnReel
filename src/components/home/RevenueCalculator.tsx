@@ -48,7 +48,7 @@ export function RevenueCalculator() {
               <div className="space-y-8">
                 <div>
                   <div className="flex justify-between mb-2">
-                    <label className="text-sm font-semibold text-white/80">Reel Views</label>
+                    <label className="text-sm font-semibold text-foreground/80">Reel Views</label>
                     <span className="text-purple-light">{views.toLocaleString()}</span>
                   </div>
                   <input 
@@ -64,7 +64,7 @@ export function RevenueCalculator() {
                 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <label className="text-sm font-semibold text-white/80">Likes</label>
+                    <label className="text-sm font-semibold text-foreground/80">Likes</label>
                     <span className="text-purple-light">{likes.toLocaleString()}</span>
                   </div>
                   <input 
@@ -80,7 +80,7 @@ export function RevenueCalculator() {
 
                 <div>
                   <div className="flex justify-between mb-2">
-                    <label className="text-sm font-semibold text-white/80">Shares</label>
+                    <label className="text-sm font-semibold text-foreground/80">Shares</label>
                     <span className="text-purple-light">{shares.toLocaleString()}</span>
                   </div>
                   <input 
