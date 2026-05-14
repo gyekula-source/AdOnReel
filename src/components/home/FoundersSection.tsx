@@ -2,36 +2,26 @@
 
 import { SlideUp } from "@/components/animations/SlideUp";
 import { GlassCard } from "@/components/ui/glass-card";
-import { Link, MessageCircle, GitBranch } from "lucide-react";
 
 export function FoundersSection() {
   const founders = [
     {
       name: "Talapureddi. Sai jhansi",
-      role: "Founder",
-      bio: "Leading the vision for creator empowerment and platform innovation with a passion for democratizing social media monetization.",
+      role: "Director",
+      bio: "Steering the company towards transformative market leadership in the creator economy with innovative technology solutions.",
       image: "/founder1.jpg",
-      linkedin: "#",
-      twitter: "#",
-      github: "#"
     },
     {
       name: "Talapureddi. Sasi Kiran",
       role: "Director",
       bio: "Driving operational excellence and strategic growth initiatives, ensuring seamless creator-brand collaborations worldwide.",
       image: "/founder2.jpg",
-      linkedin: "#",
-      twitter: "#",
-      github: "#"
     },
     {
       name: "Uma Ganesh Allada",
-      role: "CEO",
-      bio: "Steering the company towards transformative market leadership in the creator economy with innovative technology solutions.",
+      role: "Founder & CEO",
+      bio: "Leading the vision for creator empowerment and platform innovation with a passion for democratizing social media monetization. Steering the company towards transformative market leadership in the creator economy with innovative technology solutions.",
       image: "/founder3.jpg",
-      linkedin: "#",
-      twitter: "#",
-      github: "#"
     }
   ];
 
@@ -43,7 +33,11 @@ export function FoundersSection() {
             <div className="inline-flex items-center gap-2 bg-purple/10 border border-purple/30 text-purple-light text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-6">
               Our Team
             </div>
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">Meet the Founders</h2>
+
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
+              Meet the Founders
+            </h2>
+
             <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
               The visionaries building the future of creator monetization.
             </p>
@@ -55,6 +49,7 @@ export function FoundersSection() {
             <SlideUp key={founder.name} delay={index * 0.1}>
               <GlassCard className="p-8 h-full group hover:-translate-y-2 transition-all duration-500 border-purple/20 hover:border-purple/40 hover:shadow-[0_20px_40px_rgba(233,30,99,0.15)]">
                 <div className="text-center">
+                  
                   {/* Founder Image */}
                   <div className="relative mb-6">
                     <div className="w-32 h-32 mx-auto rounded-2xl overflow-hidden border-4 border-purple/30 group-hover:border-purple/50 transition-colors duration-300 shadow-lg">
@@ -64,7 +59,8 @@ export function FoundersSection() {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
-                    {/* Subtle glow effect */}
+
+                    {/* Glow Effect */}
                     <div className="absolute inset-0 w-32 h-32 mx-auto rounded-2xl bg-gradient-to-br from-purple/20 to-blue/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-xl" />
                   </div>
 
@@ -72,37 +68,14 @@ export function FoundersSection() {
                   <h3 className="text-2xl font-bold text-foreground mb-2 group-hover:text-purple transition-colors duration-300">
                     {founder.name}
                   </h3>
+
                   <p className="text-lg font-semibold text-purple mb-4">
                     {founder.role}
                   </p>
-                  <p className="text-foreground/70 leading-relaxed mb-6">
+
+                  <p className="text-foreground/70 leading-relaxed">
                     {founder.bio}
                   </p>
-
-                  {/* Social Links */}
-                  <div className="flex justify-center gap-4">
-                    <a
-                      href={founder.linkedin}
-                      className="w-10 h-10 rounded-full bg-purple/10 hover:bg-purple/20 flex items-center justify-center text-purple hover:text-purple-light transition-all duration-300 hover:scale-110"
-                      aria-label={`${founder.name} LinkedIn`}
-                    >
-                      <Link className="w-5 h-5" />
-                    </a>
-                    <a
-                      href={founder.twitter}
-                      className="w-10 h-10 rounded-full bg-blue-500/10 hover:bg-blue-500/20 flex items-center justify-center text-blue-500 hover:text-blue-400 transition-all duration-300 hover:scale-110"
-                      aria-label={`${founder.name} Twitter`}
-                    >
-                      <MessageCircle className="w-5 h-5" />
-                    </a>
-                    <a
-                      href={founder.github}
-                      className="w-10 h-10 rounded-full bg-dark/10 hover:bg-dark/20 flex items-center justify-center text-foreground/60 hover:text-foreground transition-all duration-300 hover:scale-110"
-                      aria-label={`${founder.name} GitHub`}
-                    >
-                      <GitBranch className="w-5 h-5" />
-                    </a>
-                  </div>
                 </div>
               </GlassCard>
             </SlideUp>
