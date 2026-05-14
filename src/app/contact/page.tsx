@@ -2,17 +2,9 @@
 
 import { SlideUp } from "@/components/animations/SlideUp";
 import { GlassCard } from "@/components/ui/glass-card";
-import { Mail, MapPin, Phone, Clock, Send } from "lucide-react";
-import { useState } from "react";
+import { Mail, MapPin, Phone, Clock } from "lucide-react";
 
 export default function ContactPage() {
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
-  };
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-4 md:px-8 bg-background relative overflow-hidden">
@@ -28,7 +20,7 @@ export default function ContactPage() {
           </div>
         </SlideUp>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-1 gap-12">
           {/* Contact Info */}
           <SlideUp delay={0.1}>
             <div className="space-y-8">
@@ -90,43 +82,6 @@ export default function ContactPage() {
             </div>
           </SlideUp>
 
-          {/* Contact Form */}
-          <SlideUp delay={0.2}>
-            <GlassCard className="p-8 border-border">
-              <h3 className="text-2xl font-bold mb-6">Send us a message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground">First Name</label>
-                    <input type="text" placeholder="Jane" required className="w-full px-4 py-3 bg-card border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-medium text-foreground">Last Name</label>
-                    <input type="text" placeholder="Doe" required className="w-full px-4 py-3 bg-card border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground" />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground">Email Address</label>
-                  <input type="email" placeholder="jane@example.com" required className="w-full px-4 py-3 bg-card border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground" />
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-medium text-foreground">Message</label>
-                  <textarea placeholder="How can we help you?" rows={4} required className="w-full px-4 py-3 bg-card border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground resize-none"></textarea>
-                </div>
-
-                <button 
-                  type="submit" 
-                  disabled={submitted}
-                  className="w-full py-4 bg-primary text-primary-foreground font-bold rounded-xl hover:bg-primary/90 transition-colors flex items-center justify-center gap-2 disabled:opacity-70"
-                >
-                  {submitted ? "Message Sent!" : "Send Message"}
-                  {!submitted && <Send className="w-5 h-5" />}
-                </button>
-              </form>
-            </GlassCard>
-          </SlideUp>
         </div>
       </div>
     </div>

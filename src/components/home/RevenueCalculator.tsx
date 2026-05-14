@@ -54,7 +54,7 @@ export function RevenueCalculator() {
                   <input 
                     type="range" 
                     min="1000" 
-                    max="1000000" 
+                    max="100000" 
                     step="1000"
                     value={views} 
                     onChange={(e) => setViews(Number(e.target.value))}
@@ -70,7 +70,7 @@ export function RevenueCalculator() {
                   <input 
                     type="range" 
                     min="100" 
-                    max="100000" 
+                    max="50000" 
                     step="100"
                     value={likes} 
                     onChange={(e) => setLikes(Number(e.target.value))}
@@ -86,7 +86,7 @@ export function RevenueCalculator() {
                   <input 
                     type="range" 
                     min="10" 
-                    max="50000" 
+                    max="10000" 
                     step="10"
                     value={shares} 
                     onChange={(e) => setShares(Number(e.target.value))}

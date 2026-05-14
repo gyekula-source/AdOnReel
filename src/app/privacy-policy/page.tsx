@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-6">
               <span className="text-muted text-sm uppercase tracking-widest w-24">Privacy</span>
-              <a href="mailto:privacy@adonreel.in" className="text-blue-400 hover:text-primary transition-colors">privacy@adonreel.in</a>
+              <a href="mailto:ceo@adonreel.in" className="text-blue-400 hover:text-primary transition-colors">privacy@adonreel.in</a>
             </div>
           </div>
         </div>
