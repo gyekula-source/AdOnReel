@@ -63,7 +63,7 @@ export default function FeaturesPage() {
       </div>
 
       {/* Founders Section */}
-      <div className="max-w-7xl mx-auto relative z-10 mt-20 pt-20 border-t-2 border-purple/20">
+      <div id="founders" className="max-w-7xl mx-auto relative z-10 mt-20 pt-20 border-t-2 border-purple/20">
         <SlideUp>
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-purple/10 border border-purple/30 text-purple-light text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full mb-6">
