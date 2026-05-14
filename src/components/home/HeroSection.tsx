@@ -9,11 +9,11 @@ import { ArrowRight, PlayCircle } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-32">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-32 bg-[#FDD7E4]">
       {/* Background Gradients */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-secondary via-white to-white">
-        <div className="absolute top-[20%] left-[10%] w-[500px] h-[500px] bg-primary-light/40 rounded-full blur-[120px] mix-blend-screen animate-pulse" />
-        <div className="absolute top-[40%] right-[10%] w-[400px] h-[400px] bg-primary-light/20 rounded-full blur-[100px] mix-blend-screen" style={{ animationDuration: '4s' }} />
+      <div className="absolute inset-0 z-0 bg-[#FDD7E4]">
+        <div className="absolute top-[20%] left-[10%] w-[500px] h-[500px] bg-primary-light/20 rounded-full blur-[120px] mix-blend-screen animate-pulse" />
+        <div className="absolute top-[40%] right-[10%] w-[400px] h-[400px] bg-primary-light/10 rounded-full blur-[100px] mix-blend-screen" style={{ animationDuration: '4s' }} />
       </div>
 
       {/* Grid Pattern */}

@@ -4,6 +4,7 @@ import { HowItWorksSection } from "@/components/home/HowItWorksSection";
 import { RevenueCalculator } from "@/components/home/RevenueCalculator";
 import { FeaturesSection } from "@/components/home/FeaturesSection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { FoundersSection } from "@/components/home/FoundersSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <RevenueCalculator />
       <FeaturesSection />
       <TestimonialsSection />
+      <FoundersSection />
     </div>
   );
 }

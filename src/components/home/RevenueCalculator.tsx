@@ -35,8 +35,8 @@ export function RevenueCalculator() {
       <div className="container mx-auto px-4">
         <SlideUp>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Calculate Your Earnings</h2>
-            <p className="text-muted text-lg max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Calculate Your Earnings</h2>
+            <p className="text-foreground/70 text-lg max-w-2xl mx-auto">
               Our AI analyzes engagement in real-time. See exactly how much your next reel could make on the AdOnReel platform.
             </p>
           </div>

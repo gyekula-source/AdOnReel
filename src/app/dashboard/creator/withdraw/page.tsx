@@ -7,7 +7,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 export default function WithdrawFundsPage() {
-  const [method, setMethod] = useState<"bank" | "paypal">("bank");
+  const [method, setMethod] = useState<"bank">("bank");
   const [amount, setAmount] = useState<string>("4250");
   const availableBalance = 4250.00;
 
@@ -92,7 +92,7 @@ export default function WithdrawFundsPage() {
                   {/* Method Selection */}
                   <div className="space-y-3">
                     <label className="text-sm font-semibold text-foreground">Withdrawal Method</label>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 gap-4">
                       <button
                         type="button"
                         onClick={() => setMethod("bank")}
@@ -102,17 +102,6 @@ export default function WithdrawFundsPage() {
                       >
                         <Building className="w-6 h-6" />
                         <span className="text-sm font-medium">Bank Transfer</span>
-                      </button>
-                      
-                      <button
-                        type="button"
-                        onClick={() => setMethod("paypal")}
-                        className={`p-4 rounded-xl border flex flex-col items-center justify-center gap-2 transition-all ${
-                          method === "paypal" ? "border-blue-400 bg-blue-400/10 text-blue-500" : "border-border bg-card text-muted-foreground hover:border-blue-400/50"
-                        }`}
-                      >
-                        <CreditCard className="w-6 h-6" />
-                        <span className="text-sm font-medium">PayPal</span>
                       </button>
                     </div>
                   </div>
@@ -134,13 +123,6 @@ export default function WithdrawFundsPage() {
                           <input type="text" placeholder="BANK0001234" className="w-full px-4 py-3 bg-card border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 text-foreground" />
                         </div>
                       </>
-                    )}
-
-                    {method === "paypal" && (
-                      <div className="space-y-2">
-                        <label className="text-sm font-medium text-foreground">PayPal Email Address</label>
-                        <input type="email" placeholder="sarah@example.com" className="w-full px-4 py-3 bg-card border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400/50 text-foreground" />
-                      </div>
                     )}
                   </div>
 

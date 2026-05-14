@@ -31,16 +31,16 @@ export function StatsSection() {
   ];
 
   return (
-    <section className="py-20 relative z-10 bg-dark/50 border-y border-white/5 backdrop-blur-sm">
+    <section className="py-20 relative z-10 bg-[#FDD7E4] border-y border-purple/10 backdrop-blur-sm">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center divide-x divide-white/10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center divide-x divide-purple/20">
           {stats.map((stat, index) => (
             <FadeIn key={stat.label} delay={index * 0.1} className="flex flex-col items-center">
               <div className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-2 drop-shadow-[0_0_15px_rgba(124,58,237,0.5)]">
                 {stat.label === "Campaign Revenue" ? "₹" : ""}
                 <Counter value={stat.value} suffix={stat.suffix} />
               </div>
-              <div className="text-sm md:text-base text-muted uppercase tracking-wider font-semibold">
+              <div className="text-sm md:text-base text-foreground/70 uppercase tracking-wider font-semibold">
                 {stat.label}
               </div>
             </FadeIn>

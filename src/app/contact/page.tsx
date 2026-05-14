@@ -21,8 +21,8 @@ export default function ContactPage() {
       <div className="max-w-6xl mx-auto relative z-10">
         <SlideUp>
           <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">Get in Touch</h1>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">Get in Touch</h1>
+            <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl mx-auto">
               Have questions about our platform or want to discuss a custom enterprise plan? Our team is ready to help.
             </p>
           </div>
@@ -40,7 +40,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Email Us</h3>
-                  <p className="text-muted-foreground mb-2">Reach out to our team directly.</p>
+                  <p className="text-foreground/70 mb-2">Reach out to our team directly.</p>
                   <a href="mailto:ceo@adonreel.com" className="text-primary font-medium hover:underline">ceo@adonreel.com</a>
                 </div>
               </div>
@@ -51,7 +51,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Office Location</h3>
-                  <p className="text-muted-foreground mb-2">Visit us at our headquarters.</p>
+                  <p className="text-foreground/70 mb-2">Visit us at our headquarters.</p>
                   <p className="text-foreground font-medium">INFLUDOT TECHNOLOGIES PRIVATE LIMITED<br/>C/O Talapureddi Sunitha<br/>Panachdarala Dharapalem, Rambilli<br/>Anakapalle, Visakhapatnam<br/>Andhra Pradesh, India - 531061</p>
                 </div>
               </div>
@@ -62,7 +62,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Phone</h3>
-                  <p className="text-muted-foreground mb-2">Call us during business hours.</p>
+                  <p className="text-foreground/70 mb-2">Call us during business hours.</p>
                   <a href="tel:+919063810137" className="text-primary font-medium hover:underline">+91 9063810137</a>
                 </div>
               </div>
@@ -73,7 +73,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Support Hours</h3>
-                  <p className="text-muted-foreground mb-2">When we're online and ready to assist.</p>
+                  <p className="text-foreground/70 mb-2">When we're online and ready to assist.</p>
                   <p className="text-foreground font-medium">Mon - Fri, 9am - 6pm IST</p>
                 </div>
               </div>

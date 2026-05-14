@@ -27,7 +27,7 @@ export default function HowItWorksPage() {
     {
       icon: <Wallet className="w-8 h-8 text-blue-400" />,
       title: "4. Instant Payouts",
-      description: "Once a campaign ends or you hit your threshold, withdraw your earnings directly to your bank account or PayPal instantly.",
+      description: "Once a campaign ends or you hit your threshold, withdraw your earnings directly to your bank account instantly.",
       color: "bg-blue"
     }
   ];
@@ -39,8 +39,8 @@ export default function HowItWorksPage() {
       <div className="max-w-4xl mx-auto relative z-10">
         <SlideUp>
           <div className="text-center mb-20">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">How AdOnReel Works</h1>
-            <p className="text-xl text-muted">Four simple steps to turn your creativity into a reliable revenue stream.</p>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">How AdOnReel Works</h1>
+            <p className="text-xl text-foreground/70">Four simple steps to turn your creativity into a reliable revenue stream.</p>
           </div>
         </SlideUp>
 
@@ -59,7 +59,7 @@ export default function HowItWorksPage() {
                   
                   <GlassCard className="p-8 flex-1 border-white/5 group-hover:border-white/20 transition-colors">
                     <h2 className="text-2xl font-bold text-foreground mb-4">{step.title}</h2>
-                    <p className="text-muted text-lg leading-relaxed">{step.description}</p>
+                    <p className="text-foreground/70 text-lg leading-relaxed">{step.description}</p>
                   </GlassCard>
                 </div>
               </SlideUp>

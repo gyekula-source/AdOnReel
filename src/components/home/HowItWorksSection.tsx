@@ -37,8 +37,8 @@ export function HowItWorksSection() {
       <div className="container mx-auto px-4">
         <SlideUp>
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6">How AdOnReel Works</h2>
-            <p className="text-muted text-xl max-w-2xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">How AdOnReel Works</h2>
+            <p className="text-foreground/70 text-xl max-w-2xl mx-auto">
               A streamlined creator workflow for adding branded banners to your reels.
             </p>
           </div>
@@ -63,7 +63,7 @@ export function HowItWorksSection() {
                       {step.icon}
                     </div>
                     <h3 className="text-2xl font-bold text-foreground mb-4">{step.title}</h3>
-                    <p className="text-muted leading-relaxed">
+                    <p className="text-foreground/70 leading-relaxed">
                       {step.description}
                     </p>
                   </div>

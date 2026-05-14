@@ -55,8 +55,8 @@ export default function ForBrandsPage() {
       <div className="max-w-6xl mx-auto relative z-10">
         <SlideUp>
           <div className="text-center max-w-4xl mx-auto mb-20">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">Massive Reach. Authentic Engagement. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-light">Zero Negotiation.</span></h1>
-            <p className="text-xl text-muted-foreground">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">Massive Reach. Authentic Engagement. <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-light">Zero Negotiation.</span></h1>
+            <p className="text-xl text-foreground/70">
               Provide your banners and a budget. We handle the promotion across our vast network of highly-engaging creators.
             </p>
           </div>
@@ -66,8 +66,8 @@ export default function ForBrandsPage() {
         <div className="mb-32">
           <SlideUp delay={0.1}>
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4">How Campaigns Work</h2>
-              <p className="text-lg text-muted-foreground">Launch scalable marketing campaigns in minutes.</p>
+              <h2 className="text-4xl font-bold mb-4 text-foreground">How Campaigns Work</h2>
+              <p className="text-lg text-foreground/70">Launch scalable marketing campaigns in minutes.</p>
             </div>
           </SlideUp>
 
@@ -79,7 +79,7 @@ export default function ForBrandsPage() {
                     {step.icon}
                   </div>
                   <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                  <p className="text-muted-foreground">{step.description}</p>
+                  <p className="text-foreground/70">{step.description}</p>
                 </GlassCard>
               </SlideUp>
             ))}
@@ -101,7 +101,7 @@ export default function ForBrandsPage() {
                     {benefit.icon}
                   </div>
                   <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
-                  <p className="text-muted-foreground">{benefit.description}</p>
+                  <p className="text-foreground/70">{benefit.description}</p>
                 </div>
               </SlideUp>
             ))}
@@ -111,8 +111,8 @@ export default function ForBrandsPage() {
         {/* CTA Section */}
         <SlideUp delay={0.3}>
           <GlassCard className="p-12 text-center bg-gradient-to-b from-blue-400/10 to-transparent border-blue-400/20">
-            <h2 className="text-4xl font-bold mb-6">Ready to scale your marketing?</h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold mb-6 text-foreground">Ready to scale your marketing?</h2>
+            <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto\">
               Create your brand account today and launch your first automated influencer campaign.
             </p>
             <Link 

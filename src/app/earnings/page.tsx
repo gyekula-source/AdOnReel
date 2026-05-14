@@ -16,12 +16,6 @@ export default function EarningsPage() {
       fee: "0% Fee"
     },
     {
-      name: "PayPal",
-      icon: <CreditCard className="w-8 h-8 text-blue-400" />,
-      time: "Instant",
-      fee: "1.5% Fee"
-    },
-    {
       name: "Digital Wallet",
       icon: <Wallet className="w-8 h-8 text-blue-400" />,
       time: "Instant",
@@ -116,7 +110,7 @@ export default function EarningsPage() {
         <SlideUp delay={0.4}>
           <GlassCard className="p-12 text-center bg-gradient-to-b from-purple/10 to-transparent border-purple/20">
             <h2 className="text-4xl font-bold mb-6">Ready to start earning?</h2>
-            <p className="text-xl text-muted mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
               Join thousands of creators who are already monetizing their Instagram presence with AdOnReel.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

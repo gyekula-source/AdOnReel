@@ -25,7 +25,7 @@ export default function ForCreatorsPage() {
     {
       icon: <Banknote className="w-8 h-8 text-blue-400" />,
       title: "4. Earn Money",
-      description: "Get paid based on the views and engagement your videos generate. Withdraw your earnings easily to your bank or PayPal.",
+      description: "Get paid based on the views and engagement your videos generate. Withdraw your earnings easily to your bank account.",
     }
   ];
 
@@ -55,8 +55,8 @@ export default function ForCreatorsPage() {
       <div className="max-w-6xl mx-auto relative z-10">
         <SlideUp>
           <div className="text-center max-w-4xl mx-auto mb-20">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">Turn Your Social Influence Into <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-light to-blue-400">Guaranteed Income</span></h1>
-            <p className="text-xl text-muted-foreground">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">Turn Your Social Influence Into <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-light to-blue-400">Guaranteed Income</span></h1>
+            <p className="text-xl text-foreground/70">
               Install the app, sync your social accounts, and manually add branded banners to your reels with easy placement controls.
             </p>
           </div>
@@ -66,8 +66,8 @@ export default function ForCreatorsPage() {
         <div className="mb-32">
           <SlideUp delay={0.1}>
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4">How You Earn</h2>
-              <p className="text-lg text-muted-foreground">A seamless integration process designed for creators.</p>
+              <h2 className="text-4xl font-bold mb-4 text-foreground">How You Earn</h2>
+              <p className="text-lg text-foreground/70">A seamless integration process designed for creators.</p>
             </div>
           </SlideUp>
 
@@ -79,7 +79,7 @@ export default function ForCreatorsPage() {
                     {step.icon}
                   </div>
                   <h3 className="text-xl font-bold mb-3">{step.title}</h3>
-                  <p className="text-muted-foreground">{step.description}</p>
+                  <p className="text-foreground/70">{step.description}</p>
                 </GlassCard>
               </SlideUp>
             ))}
@@ -101,7 +101,7 @@ export default function ForCreatorsPage() {
                     {benefit.icon}
                   </div>
                   <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>
-                  <p className="text-muted-foreground">{benefit.description}</p>
+                  <p className="text-foreground/70">{benefit.description}</p>
                 </div>
               </SlideUp>
             ))}
@@ -112,7 +112,7 @@ export default function ForCreatorsPage() {
         <SlideUp delay={0.3}>
           <GlassCard className="p-12 text-center bg-gradient-to-b from-primary/10 to-transparent border-primary/20">
             <h2 className="text-4xl font-bold mb-6">Ready to monetize your passion?</h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-foreground/70 mb-8 max-w-2xl mx-auto">
               Join thousands of creators who are already earning passive income on AdOnReel.
             </p>
             <Link 

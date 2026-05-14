@@ -76,11 +76,11 @@
   --error: #EF4444;
   --warning: #F59E0B;
 
-  --background: #FFFFFF;
+  --background: #FDD7E4;
   --foreground: #0F172A;
-  --card: #FDF2F8;
+  --card: #FDD7E4;
   --card-foreground: #0F172A;
-  --popover: rgba(255, 255, 255, 0.95);
+  --popover: rgba(253, 215, 228, 0.95);
   --popover-foreground: #0F172A;
   --primary: var(--purple);
   --primary-foreground: var(--white);

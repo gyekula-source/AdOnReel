@@ -36,9 +36,9 @@ export default function AboutPage() {
       <div className="max-w-4xl mx-auto relative z-10">
         <SlideUp>
           <div className="text-center mb-16">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">About AdOnReel</h1>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">About AdOnReel</h1>
             <p className="text-xl text-primary font-semibold mb-6">"Built for Creators. Designed for Brands."</p>
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg text-foreground/70 leading-relaxed max-w-3xl mx-auto">
               AdOnReel is the premier AI-powered marketplace bridging the gap between innovative brands and dynamic content creators. We believe in democratizing social media monetization by replacing tedious sponsorship negotiations with automated, performance-based ad placements.
             </p>
           </div>
@@ -51,8 +51,8 @@ export default function AboutPage() {
                 <div className="w-16 h-16 rounded-2xl bg-secondary flex items-center justify-center mb-6">
                   {val.icon}
                 </div>
-                <h3 className="text-2xl font-bold mb-4">{val.title}</h3>
-                <p className="text-muted-foreground">{val.description}</p>
+                <h3 className="text-2xl font-bold mb-4 text-foreground">{val.title}</h3>
+                <p className="text-foreground/70">{val.description}</p>
               </GlassCard>
             </SlideUp>
           ))}
@@ -60,8 +60,8 @@ export default function AboutPage() {
 
         <SlideUp delay={0.4}>
           <GlassCard className="p-12 text-center bg-secondary border-border">
-            <h2 className="text-3xl font-bold mb-4">Join the Revolution</h2>
-            <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4 text-foreground">Join the Revolution</h2>
+            <p className="text-foreground/70 mb-8 max-w-xl mx-auto">
               Whether you are a creator looking to monetize your passion or a brand seeking authentic engagement, there is a place for you here.
             </p>
           </GlassCard>
