@@ -81,14 +81,14 @@ export default function FeaturesPage() {
           <SlideUp delay={0.1}>
             <div className="text-center">
               <div className="mb-6 flex justify-center">
-                <img 
-                  src="/founder1.jpg" 
-                  alt="Talapureddi. Sai jhansi" 
+                <img
+                  src="/founder1.jpg"
+                  alt="Talapureddi. Sai jhansi"
                   className="w-48 h-48 rounded-2xl object-cover border-4 border-purple/30 shadow-lg"
                 />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">Talapureddi. Sai jhansi</h3>
-              <p className="text-lg font-semibold text-purple mb-2">Founder</p>
+              <p className="text-lg font-semibold text-purple mb-2">Director</p>
               <p className="text-foreground/70">Leading the vision for creator empowerment and platform innovation.</p>
             </div>
           </SlideUp>
@@ -97,9 +97,9 @@ export default function FeaturesPage() {
           <SlideUp delay={0.2}>
             <div className="text-center">
               <div className="mb-6 flex justify-center">
-                <img 
-                  src="/founder2.jpg" 
-                  alt="Talapureddi. Sasi Kiran" 
+                <img
+                  src="/founder2.jpg"
+                  alt="Talapureddi. Sasi Kiran"
                   className="w-48 h-48 rounded-2xl object-cover border-4 border-purple/30 shadow-lg"
                 />
               </div>
@@ -113,14 +113,14 @@ export default function FeaturesPage() {
           <SlideUp delay={0.3}>
             <div className="text-center">
               <div className="mb-6 flex justify-center">
-                <img 
-                  src="/founder3.jpg" 
-                  alt="Uma Ganesh Allada" 
+                <img
+                  src="/founder3.jpg"
+                  alt="Uma Ganesh Allada"
                   className="w-48 h-48 rounded-2xl object-cover border-4 border-purple/30 shadow-lg"
                 />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-2">Uma Ganesh Allada</h3>
-              <p className="text-lg font-semibold text-purple mb-2">CEO</p>
+              <p className="text-lg font-semibold text-purple mb-2">Founder & CEO</p>
               <p className="text-foreground/70">Steering the company towards transformative leadership.</p>
             </div>
           </SlideUp>

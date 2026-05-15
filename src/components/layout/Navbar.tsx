@@ -35,6 +35,7 @@ export function Navbar() {
               className="object-contain h-10 w-auto md:h-12"
               priority
             />
+            <span className="text-xl md:text-2xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple to-blue">AdOnReel</span>
           </Link>
           <div className="hidden sm:flex flex-col text-xs uppercase tracking-[0.25em] text-muted-foreground">
           </div>

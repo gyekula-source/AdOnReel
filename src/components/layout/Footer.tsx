@@ -11,7 +11,7 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 lg:gap-12 mb-16">
           <div className="col-span-2 lg:col-span-2">
-            <Link href="/" className="flex items-center mb-6">
+            <Link href="/" className="flex items-center gap-3 mb-6">
               <Image 
                 src="/logo.jpg" 
                 alt="AdOnReel Logo" 
@@ -19,6 +19,7 @@ export function Footer() {
                 height={50} 
                 className="object-contain h-12 w-auto rounded-lg"
               />
+              <span className="text-2xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple to-blue">AdOnReel</span>
             </Link>
             <p className="text-muted max-w-sm mb-6">
               The creator-first influencer advertising marketplace. Turn every reel into revenue with premium influencer campaigns.
