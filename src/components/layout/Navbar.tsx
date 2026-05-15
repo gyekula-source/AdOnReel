@@ -37,7 +37,6 @@ export function Navbar() {
             />
           </Link>
           <div className="hidden sm:flex flex-col text-xs uppercase tracking-[0.25em] text-muted-foreground">
-            <span className="font-semibold">Powered by Infludot</span>
           </div>
         </div>
 

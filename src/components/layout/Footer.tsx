@@ -24,7 +24,7 @@ export function Footer() {
               The creator-first influencer advertising marketplace. Turn every reel into revenue with premium influencer campaigns.
             </p>
             <div className="text-sm text-muted space-y-2">
-              <p className="font-semibold text-foreground">INFLUDOT TECHNOLOGIES PRIVATE LIMITED</p>
+              <p className="font-semibold text-foreground">ADONREEL INC.</p>
               <p>C/O Talapureddi Sunitha<br/>Panachdarala Dharapalem, Rambilli<br/>Anakapalle, Visakhapatnam<br/>Andhra Pradesh, India - 531061</p>
               <p><a href="tel:+919063810137" className="hover:text-primary transition-colors">+91 9063810137</a></p>
             </div>
@@ -62,7 +62,7 @@ export function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-muted text-sm space-y-2">
             <p>&copy; {currentYear} AdOnReel Inc. All rights reserved.</p>
-            <p className="text-xs">INFLUDOT TECHNOLOGIES PRIVATE LIMITED</p>
+            <p className="text-xs">ADONREEL INC.</p>
             <p className="text-xs">CIN: U74909AP2025PTC120808 | PAN: AAICI3762N | TAN: VPNI02010B</p>
             <p className="text-xs">Incorporated on Aug 21, 2025</p>
           </div>

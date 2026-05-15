@@ -44,7 +44,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-semibold text-lg mb-1">Office Location</h3>
                   <p className="text-foreground/70 mb-2">Visit us at our headquarters.</p>
-                  <p className="text-foreground font-medium">INFLUDOT TECHNOLOGIES PRIVATE LIMITED<br/>C/O Talapureddi Sunitha<br/>Panachdarala Dharapalem, Rambilli<br/>Anakapalle, Visakhapatnam<br/>Andhra Pradesh, India - 531061</p>
+                  <p className="text-foreground font-medium">ADONREEL INC.<br/>C/O Talapureddi Sunitha<br/>Panachdarala Dharapalem, Rambilli<br/>Anakapalle, Visakhapatnam<br/>Andhra Pradesh, India - 531061</p>
                 </div>
               </div>
 

@@ -14,7 +14,7 @@ export default function PrivacyPolicyPage() {
       </div>
 
       <LegalSection number={1} title="Introduction & Who We Are" delay={0.1}>
-        <p>AdOnReel ("we," "our," or "us") is an AI-powered influencer advertising marketplace that connects local businesses with content creators. We are operated by <strong>Infludot Technologies</strong>.</p>
+        <p>AdOnReel ("we," "our," or "us") is an AI-powered influencer advertising marketplace that connects local businesses with content creators.</p>
         <p>This Privacy Policy explains how we collect, use, share, and protect information when you use our platform, mobile application, and website ("Services").</p>
         <p>By using AdOnReel, you agree to the practices described in this policy. If you do not agree, please do not use our Services.</p>
       </LegalSection>
@@ -65,7 +65,7 @@ export default function PrivacyPolicyPage() {
           <div className="space-y-4 relative z-10">
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-6">
               <span className="text-muted text-sm uppercase tracking-widest w-24">Company</span>
-              <strong className="text-primary">Infludot Technologies — AdOnReel</strong>
+              <strong className="text-primary">AdOnReel</strong>
             </div>
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-6">
               <span className="text-muted text-sm uppercase tracking-widest w-24">Privacy</span>
